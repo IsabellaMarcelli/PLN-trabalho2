@@ -1,0 +1,10 @@
+tipo,pergunta,configuracao,resposta,maior_sim,trecho_recuperado,abstencao,sustentada_no_corpus
+com resposta,Who did the Israel Defense Forces capture in a raid in Gaza?,sem RAG,Israel,,,False,False
+com resposta,Who did the Israel Defense Forces capture in a raid in Gaza?,RAG top-1,Hamas' head of general security,0.679,"[Fox News] The Israel Defense Forces captured Hamas' head of general security during a raid in Gaza, Israeli Defense Minister Israel Katz said. An Isra",False,True
+com resposta,Who did the Israel Defense Forces capture in a raid in Gaza?,RAG top-3,Hamas' head of general security,0.679,"[Fox News] The Israel Defense Forces captured Hamas' head of general security during a raid in Gaza, Israeli Defense Minister Israel Katz said. An Isra",False,True
+com resposta,Why did oil prices climb after strikes in the Middle East?,sem RAG,The Middle East was a hotbed of economic activity,,,False,False
+com resposta,Why did oil prices climb after strikes in the Middle East?,RAG top-1,I don't know,0.671,"[Channel News Asia] Oil prices rise to six-week highs on worsening Middle East conflict NEW YORK, : Oil prices rose to a six-week high on Monday as Iran vowed t",True,n/a (abstencao indevida)
+com resposta,Why did oil prices climb after strikes in the Middle East?,RAG top-3,Iran vowed to strike energy infrastructure across the Middle East in response to further U.S. attacks on its assets,0.671,"[Channel News Asia] Oil prices rise to six-week highs on worsening Middle East conflict NEW YORK, : Oil prices rose to a six-week high on Monday as Iran vowed t",False,True
+sem resposta,What is the population of Brazil?,sem RAG,"87,069",,,False,False
+sem resposta,What is the population of Brazil?,RAG top-1,I don't know,0.341,[Channel News Asia] by 2030 from nearly US$70 billion in 2024 to 2025.,True,n/a (abstencao correta)
+sem resposta,What is the population of Brazil?,RAG top-3,I don't know,0.341,[Channel News Asia] by 2030 from nearly US$70 billion in 2024 to 2025.,True,n/a (abstencao correta)

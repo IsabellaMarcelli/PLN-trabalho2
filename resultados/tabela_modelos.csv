@@ -1,0 +1,6 @@
+modelo,acuracia,acuracia_balanceada,f1_macro
+BoW + Naive Bayes (referência),0.710 ± 0.063,0.570 ± 0.109,0.551 ± 0.107
+TF-IDF + SVM linear,0.747 ± 0.065,0.516 ± 0.075,0.514 ± 0.074
+TF-IDF + Reg. Logística (PRINCIPAL),0.740 ± 0.056,0.503 ± 0.066,0.503 ± 0.069
+Baseline: sorteio estratificado,0.340 ± 0.027,0.215 ± 0.033,0.194 ± 0.024
+Baseline: classe mais frequente,0.442 ± 0.015,0.200 ± 0.000,0.123 ± 0.003

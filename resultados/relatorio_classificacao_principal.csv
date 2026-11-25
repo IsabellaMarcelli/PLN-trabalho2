@@ -1,0 +1,9 @@
+,precision,recall,f1-score,support
+Al Jazeera,0.762,0.842,0.8,38.0
+CNN,0.4,0.182,0.25,11.0
+Channel News Asia,0.724,0.84,0.778,50.0
+Fox News,0.75,0.6,0.667,10.0
+Jerusalem Post,0.0,0.0,0.0,4.0
+accuracy,0.726,0.726,0.726,0.726
+macro avg,0.527,0.493,0.499,113.0
+weighted avg,0.682,0.726,0.697,113.0

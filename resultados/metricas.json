@@ -1,0 +1,313 @@
+{
+  "fonte_dados": "corpus T1",
+  "n_artigos": 113,
+  "n_classes": 5,
+  "classes": {
+    "Channel News Asia": 50,
+    "Al Jazeera": 38,
+    "CNN": 11,
+    "Fox News": 10,
+    "Jerusalem Post": 4
+  },
+  "classes_removidas": {
+    "Straits Times": 1
+  },
+  "razao_maior_menor_classe": 12.5,
+  "folds": 4,
+  "repeticoes": 5,
+  "modelos": {
+    "Baseline: classe mais frequente": {
+      "acuracia": [
+        0.4424,
+        0.015
+      ],
+      "acuracia_balanceada": [
+        0.2,
+        0.0
+      ],
+      "f1_macro": [
+        0.1227,
+        0.0029
+      ]
+    },
+    "Baseline: sorteio estratificado": {
+      "acuracia": [
+        0.3397,
+        0.0266
+      ],
+      "acuracia_balanceada": [
+        0.2154,
+        0.0326
+      ],
+      "f1_macro": [
+        0.1941,
+        0.0237
+      ]
+    },
+    "BoW + Naive Bayes (referência)": {
+      "acuracia": [
+        0.7097,
+        0.0626
+      ],
+      "acuracia_balanceada": [
+        0.5697,
+        0.1086
+      ],
+      "f1_macro": [
+        0.5507,
+        0.1074
+      ]
+    },
+    "TF-IDF + SVM linear": {
+      "acuracia": [
+        0.7469,
+        0.0651
+      ],
+      "acuracia_balanceada": [
+        0.5164,
+        0.0752
+      ],
+      "f1_macro": [
+        0.5139,
+        0.0743
+      ]
+    },
+    "TF-IDF + Reg. Logística (PRINCIPAL)": {
+      "acuracia": [
+        0.7399,
+        0.0558
+      ],
+      "acuracia_balanceada": [
+        0.503,
+        0.0663
+      ],
+      "f1_macro": [
+        0.5032,
+        0.0687
+      ]
+    },
+    "Embeddings MiniLM + Reg. Logística": {
+      "acuracia": [
+        0.7203,
+        0.0565
+      ],
+      "acuracia_balanceada": [
+        0.5443,
+        0.0799
+      ],
+      "f1_macro": [
+        0.5234,
+        0.0843
+      ]
+    }
+  },
+  "grupo": {
+    "Baseline: classe mais frequente": {
+      "acuracia": [
+        0.4427,
+        0.0097
+      ],
+      "acuracia_balanceada": [
+        0.3333,
+        0.0
+      ],
+      "f1_macro": [
+        0.2045,
+        0.0031
+      ]
+    },
+    "BoW + Naive Bayes (referência)": {
+      "acuracia": [
+        0.7669,
+        0.0944
+      ],
+      "acuracia_balanceada": [
+        0.7579,
+        0.104
+      ],
+      "f1_macro": [
+        0.7527,
+        0.1034
+      ]
+    },
+    "TF-IDF + Reg. Logística (PRINCIPAL)": {
+      "acuracia": [
+        0.8096,
+        0.1028
+      ],
+      "acuracia_balanceada": [
+        0.7835,
+        0.1144
+      ],
+      "f1_macro": [
+        0.7876,
+        0.1161
+      ]
+    }
+  },
+  "vazamento_nomes": {
+    "Com nomes de veículo (bruto)": {
+      "acuracia": [
+        0.7718,
+        0.0637
+      ],
+      "acuracia_balanceada": [
+        0.539,
+        0.0877
+      ],
+      "f1_macro": [
+        0.5349,
+        0.0927
+      ]
+    },
+    "Sem nomes de veículo (mascarado)": {
+      "acuracia": [
+        0.7399,
+        0.0558
+      ],
+      "acuracia_balanceada": [
+        0.503,
+        0.0663
+      ],
+      "f1_macro": [
+        0.5032,
+        0.0687
+      ]
+    }
+  },
+  "taxa_erro_principal": 0.2743,
+  "termos_por_classe": {
+    "Al Jazeera": [
+      "palestine",
+      "gaza",
+      "israeli",
+      "pm",
+      "genocidal war",
+      "genocidal",
+      "israeli attack",
+      "percent"
+    ],
+    "CNN": [
+      "recognize",
+      "defense",
+      "house",
+      "seat",
+      "term",
+      "democrats",
+      "publicly",
+      "bill"
+    ],
+    "Channel News Asia": [
+      "iran",
+      "cent",
+      "oil",
+      "strike",
+      "thursday",
+      "middle east",
+      "middle",
+      "saudi"
+    ],
+    "Fox News": [
+      "criticize",
+      "jewish",
+      "hamas",
+      "anti israel",
+      "el sayed",
+      "sayed",
+      "comment",
+      "kid"
+    ],
+    "Jerusalem Post": [
+      "flight",
+      "medical",
+      "airport",
+      "carrier",
+      "air",
+      "return israel",
+      "ben",
+      "tel aviv"
+    ]
+  },
+  "hf_disponivel": true,
+  "holdout": {
+    "acuracia": 0.7241,
+    "acuracia_balanceada": 0.5472,
+    "f1_macro": 0.5455,
+    "roc_auc_macro": 0.8429,
+    "ap_macro": 0.6645
+  },
+  "melhor_C": 0.1,
+  "agrupamento": {
+    "K": 5,
+    "ARI_vs_veiculo": 0.12,
+    "NMI_vs_veiculo": 0.21,
+    "estabilidade_ARI_sementes": 0.385,
+    "silhouette_clusters": 0.076,
+    "silhouette_rotulos_reais": 0.008,
+    "ARI_vs_veiculo_embeddings": 0.149,
+    "NMI_vs_veiculo_embeddings": 0.267
+  },
+  "busca_titulo_artigo": {
+    "hit@1": {
+      "TF-IDF unigramas": 0.77,
+      "TF-IDF uni+bigramas": 0.752,
+      "Embeddings MiniLM": 0.761
+    },
+    "hit@5": {
+      "TF-IDF unigramas": 0.982,
+      "TF-IDF uni+bigramas": 0.982,
+      "Embeddings MiniLM": 0.982
+    },
+    "MRR": {
+      "TF-IDF unigramas": 0.86,
+      "TF-IDF uni+bigramas": 0.85,
+      "Embeddings MiniLM": 0.855
+    }
+  },
+  "tom_por_lado": [
+    {
+      "veiculo": "Al Jazeera",
+      "Israel": -0.149,
+      "Palestina/Gaza/Hamas": -0.061,
+      "n_Israel": 196,
+      "n_Palestina": 129,
+      "p_valor_MannWhitney": 0.084
+    },
+    {
+      "veiculo": "CNN",
+      "Israel": -0.081,
+      "Palestina/Gaza/Hamas": -0.206,
+      "n_Israel": 60,
+      "n_Palestina": 23,
+      "p_valor_MannWhitney": 0.237
+    },
+    {
+      "veiculo": "Channel News Asia",
+      "Israel": -0.203,
+      "Palestina/Gaza/Hamas": -0.101,
+      "n_Israel": 206,
+      "n_Palestina": 35,
+      "p_valor_MannWhitney": 0.241
+    },
+    {
+      "veiculo": "Fox News",
+      "Israel": -0.081,
+      "Palestina/Gaza/Hamas": -0.041,
+      "n_Israel": 37,
+      "n_Palestina": 48,
+      "p_valor_MannWhitney": 0.783
+    },
+    {
+      "veiculo": "Jerusalem Post",
+      "Israel": 0.114,
+      "Palestina/Gaza/Hamas": -0.622,
+      "n_Israel": 34,
+      "n_Palestina": 5,
+      "p_valor_MannWhitney": 0.008
+    }
+  ],
+  "agencia_acerto_gabarito": {
+    "agente": 1.0,
+    "paciente": 1.0
+  }
+}

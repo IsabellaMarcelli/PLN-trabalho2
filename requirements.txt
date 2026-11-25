@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn>=1.3
+spacy>=3.7
+# Etapa 6 (componente contemporâneo - Hugging Face)
+sentence-transformers
+transformers
+torch
+# execução do notebook
+jupyter
+vaderSentiment
+scipy
