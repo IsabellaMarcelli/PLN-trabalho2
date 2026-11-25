@@ -3,7 +3,7 @@
 Pergunta: dado o texto de uma matéria sobre o conflito Israel–Palestina, é possível prever o **veículo** (ou grupo de
 veículos) que a publicou — mesmo com os nomes dos veículos mascarados? E quais termos compõem essa "assinatura lexical"?
 
-**Autoras:** Maria Rocha Monteiro Câmara e Isabella Oliveira Marcelli
+**Autoras:** Isabella Oliveira Marcelli
 
 ## Pipeline (segue o enunciado)
 | Etapa | O que foi feito |
